@@ -32,17 +32,44 @@ body {
   background-color: var(--dark-desaturated-blue);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* border: 10px solid mistyrose; */
+  margin: 75px 20px;
+  border-radius: 15px;
 }
 
-header .img-desktop {
-  display: none;
-} 
+.img {
+  position: relative;
+  border-radius: 15px 15px 0 0;
+}
 
-h1, .stat {
+/* Violet tint for the image */
+.img:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--soft-violet);
+  z-index: 1;
+  opacity: 0.5;
+  border-radius: 15px 15px 0 0;
+}
+
+.img-mobile {
+  display: block;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
   color: var(--white);
   font-weight: 700;
+  text-align: center;
 }
 
 .accent {
@@ -52,15 +79,84 @@ h1, .stat {
 p {
   color: var(--slightly-transparent-white1);
   font-weight: 400;
+  text-align: center;
+}
+
+.stats-container {
+  padding-bottom: 30px;
+}
+
+.stat {
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
 }
 
 .stat-heading {
   color: var(--slightly-transparent-white2);
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 992px) {
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
+  }
+
+  .img {
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .img::before {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .container {
+    flex-direction: row-reverse;
+    margin: 100px 80px;
+  }
+
+  .info {
+    justify-content: space-around;
+  }
+
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  h1 {
+    text-align: left;
+    padding: 0 35px;
+  }
+
+  p {
+    text-align: left;
+    padding: 0 35px;
+  }
+
+  .stat {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    padding: 0 50px;
+  }
+
+  p {
+    padding: 0 50px;
+  }
+}
 
 /* Attribution */
 .attribution { font-size: 11px; text-align: center; }
