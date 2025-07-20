@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./stats-preview-card-desktop.jpg)
-![](./stats-preview-card-mobile.jpg)
+![](./stats-preview-card-desktop.JPG)
+![](./stats-preview-card-mobile.JPG)
 
 ## My process
 
