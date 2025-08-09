@@ -4,7 +4,6 @@
 <p align="center">
   <a href="https://sososammy.github.io/stats-preview-card-component">
     <img width="1755" height="986" alt="image" src="https://github.com/user-attachments/assets/62b01a90-96f8-46d7-8ff8-1bbb9107ca9f" />
-
   </a>
 
   <h3 align="center">Stats Preview Card Component</h3>
@@ -82,6 +81,7 @@ I will continue to utilize Flexbox to create more websites and web components. I
 
 - [Three ways to tint image with CSS3: box-shadow, multiple backgrounds and pseudo elements.](https://cssfox.co/=maxim-aginsky/log/three-ways-to-tint-image-with-css3-box-shadow-multiple-backgrounds-and-pseudo-elements/) - This helped me with creating the violet tint for the image. I really liked how straightforward and simple the different solutions were.
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties) - This is an amazing article which helped me understand the different aspects of Flexbox. I'd recommend it to anyone learning Flexbox.
+
 
 
 
